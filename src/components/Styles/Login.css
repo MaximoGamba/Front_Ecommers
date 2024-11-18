@@ -1,0 +1,91 @@
+/* login.css */
+
+/* Aplica la imagen de fondo solo a la página de login */
+.login-page {
+    background-image: url('https://wallpapers.com/images/hd/small-side-table-furniture-8vnn7k9hmzn4mrj2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita el scroll si la imagen es muy grande */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecf0; /* Fondo por defecto si no estamos en la página de login */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Evita el scroll en el body */
+}
+
+/* Estilo para el contenedor de login */
+.login-container {
+    background-color: rgba(248, 249, 250, 0.9); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90vw; /* Ajuste para pantallas pequeñas */
+    text-align: center;
+}
+
+/* Estilos para el formulario de login */
+.login-form {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.login-form:hover {
+    transform: scale(1.02);
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #795548;
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #946d63;
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.login-form button {
+    background-color: #795548;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.login-form button:hover {
+    background-color: #59433c;
+}

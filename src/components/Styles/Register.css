@@ -1,0 +1,92 @@
+/* Register.css */
+
+/* Eliminar el fondo en body, solo en la página de registro aplicamos el fondo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Aplica el fondo solo a la página de registro */
+.register-page {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0KCAgICA0HCAgHBwoHBwgHBw8ICQgKFREiIhURExMYHSggGBolGx8fITEhJSkrOi4uFx8zODM4NygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAAAQIDBAUGB//EABsQAQEBAQEBAQEAAAAAAAAAAAABAhESAzEh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AP0+U+sppcoL6fUnAVKqVEMFEOgCTVJoFSOlQK0FS6CuiVHTlBpKcqOn0Gk0qaZSnKDXp9Zyn0GnR1HT6C/R+mfT6C+jqOjoL6Oo6Ogro6jo6Cul1I6B9HU9HQV0dR0dBxStM6c80uUHRNKlYTS5oGvT6iaPoL6Op6OgrpF0dAUgASSrCoJAIDhkAXDTFQDNJgs4mGCgIAMCGBAwCQfABUjLgFQfC4AAHAeXKqaYxUBvNKmmEqpoHRNHNMZpUoNun1jNKmga9PrPp9BYT0+gZWH0ugmwcMgABUDiomHAUZGBxSTgLhplMFQCADAMCJRAng4ogIlAEhQB4cp9HABiUAFSqlZnKDWaVKylOUG0qpplNKlBrKcrKVUoNAjp9BQLo6AA6XQMDo6ByqiOnKCziJTBcqpWcVKCz6iVQK6aemCgXR0DBdAGXAAAAB4gHQABDoGE9LoL6qVn05QaSqlZSrlBrKfWUqpQaH1n1XQXKfUdHQX0up6AX0dQAX05WfTlBpKqVnKroLNMpguU5URUBcpoVKCuhJgYIAYSAV0dT0dB4k0fphND2DbpdZei9A26V0y9D0DWaPrLpyg1lVKxmlyg1lVKylVKDSU5USmDTo6iU+grp9R0dBfR1n0dBp05WXTmgayqlZTSpQayrlYzS5QamiVXQVDTDBcCTAxSADpAgMgQPmM/Rftxy8V7B1ex6c02qbB0eh6Yezmwb+jmmM0uUGsq5WMq80G0qpWUq5QayqlZSrgLBQAfS6QA+jqSBXo+s7S9A26crL0foG+dLlc+dLzoHRNLlYTS86BtKqVnmqlBfTSAUE9PoAh0AAQB8eBwAAAA6fogDTOl50wVNA6ZppmubOmmdA6JWmawzWkoNoqVnmrgNIChgCAArUWrsTYDO6L0eojgK9n7TwqDTO2uduT1/V50Drm1525Zpedg7M6aZ05M6aZ0Dqmj6wmlTQNuhEqgMEAMEAfJ2FY0sTYCCUOAkGQAAAJWmNMwDrxprnTjxtvjQOnNaZrnzppKDeVbHNaZBQAAcTY0TYDKxnY2sLyDG1nqui4Z6yDntVNq1lPkFTa5tn5Kg6sbbZ24c6bZ2DszppnTkztrnQOnOmk05s6aTQNen1nKcoNIEygHzVhWNKiwEWJaWJsBBcUASRigQAAKzviSB0Z+rbH0cKs7sB6edtc6ef8AP6ujGwdc0qVzza80G4TmqAuDhgEWM9RrUWAx1EWN7EayDDVZ6rfWWO8gMaa50wzlpIDfOm2NOWNMaB15rTOnNnTWUG0qpWUqpQayn1nADwgACaVgAJsSABEABAAAAAIAAcvPxrj7c/SAOj5/aN8fQwDbG2k0QBXR0ABSIAVTQAZaZagAJHQAL00xQAbYrXNABpKuUAFSn0gD/9k=');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Para cubrir toda la pantalla */
+}
+
+/* Estilos para el contenedor del formulario de registro */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(248, 249, 250, 0.9); /* Fondo translúcido */
+}
+
+/* Estilos del formulario de registro */
+.register-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    transition: transform 0.3s;
+}
+
+.register-form:hover {
+    transform: scale(1.02);
+}
+
+.text-button-color {
+    color: #795548; /* Color marrón de los botones */
+}
+
+.register-form h2 {
+    text-align: center;
+}
+
+/* Estilo de los inputs y select */
+.register-form .form-control,
+.register-form .form-select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.register-form .form-control:focus,
+.register-form .form-select:focus {
+    border-color: #795548;
+    outline: none;
+}
+
+/* Estilo del botón "Registrarse" */
+.register-form .btn-primary {
+    background-color: #795548;
+    border: none;
+    color: white;
+}
+
+/* Efecto hover para el botón "Registrarse" */
+.register-form .btn-primary:hover {
+    background-color: #6d4c41; /* Marrón oscuro al pasar el ratón */
+}
+
+/* Estilo para el enlace "Ya tengo una cuenta" */
+.styled-link {
+    color: #795548;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.styled-link:hover {
+    color: #6d4c41;
+    text-decoration: underline;
+}
+
+
+  
+  

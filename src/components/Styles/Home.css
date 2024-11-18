@@ -1,0 +1,148 @@
+/* Contenedor principal de la página */
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.home-content {
+    text-align: center;
+    padding: 0;
+    margin-top: 60px; /* Ajuste menor en el margen */
+    background-image: url('https://wallpapers.com/images/hd/small-side-table-furniture-8vnn7k9hmzn4mrj2.jpg');
+    background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed;
+    flex: 1; /* Asegura que ocupe todo el espacio disponible */
+    height: calc(100vh - 60px); /* Ajuste para que llegue justo hasta la línea de la barra */
+    width: 100%;
+    margin: 0;
+    
+}
+
+/* Barra de navegación */
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5; /* Color neutro para la barra */
+    padding: 6px 20px; /* Reduce el padding para hacer la barra más angosta */
+    border-bottom: 1px solid #ddd; /* Límite inferior */
+    width: 100%; /* Asegura que ocupe toda la pantalla */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Asegura que la barra esté encima del contenido */
+    box-sizing: border-box;
+    height: 50px;
+}
+
+/* Logotipo y nombre de la empresa a la izquierda */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #795548;
+    text-decoration: none; /* Sin subrayado en el texto de la marca */
+}
+
+.brand-name {
+    color: #795548;
+    margin-left: 10px; /* Espacio entre el logo y el nombre */
+}
+
+/* Buscador centrado */
+.form-control {
+    width: 100%; /* Asegura que el input ocupe todo el espacio del contenedor */
+    padding: 0.5rem 1rem;
+    border: 1px solid #795548;
+    border-radius: 25px; /* Bordes redondeados */
+}
+
+.search-bar {
+    width: 60%;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+    display: flex;
+    align-items: center;
+    flex-grow: 2; /* Aumenta el espacio disponible en el centro para el buscador */
+    margin-left: 20px; /* Espacio a los lados para separar del logo y los botones */
+    max-width: 50%; /* Limita el tamaño máximo del buscador */
+}
+
+/* Botones a la derecha */
+.custom-btn {
+    background-color: white;
+    color: #795548;
+    border: 1px solid #795548;
+    border-radius: 25px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    margin-left: 5px; /* Espacio entre botones */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #6d4c41;
+    color: white;
+}
+
+.auth-buttons {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px; /* Mueve los botones un poco más a la izquierda */
+    gap: 10px;
+}
+
+/* Navbar transparente en el centro */
+.navbar {
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0.6rem 2rem; /* Ajusta el padding para hacer la barra más angosta */
+    width: 100%; /* Asegura que la barra ocupe todo el ancho */
+}
+
+/* Contenedor para alineación en la barra */
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilos de la sección de bienvenida */
+.home-content h1, .home-content p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Personaliza el botón de ayuda */
+.btn-help {
+    background-color: #ff7043; /* Color llamativo */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-help:hover {
+    background-color: #ff5722; /* Color más oscuro al pasar el mouse */
+  }
+  
+
+

@@ -1,0 +1,123 @@
+/* Variables de color para hacer el diseño más personalizable */
+:root {
+  --color-fondo: #f7f7f7;
+  --color-borde: #070303;
+  --color-texto: #928787;
+  --color-boton: #4caf50;
+  --color-boton-hover: #4d9751;
+  --color-mensaje-exito: #85e88cc3;
+  --color-borde-exito: #4caf50;
+  --color-texto-exito: #459e49;
+  --color-input-borde: #0d0909;
+}
+
+/* Estilos generales del formulario */
+.formulario-errores {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  background-color: var(--color-fondo);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.formulario-errores:hover {
+  transform: scale(1.02); /* Efecto de aumento suave al pasar el mouse */
+}
+
+/* Título del formulario */
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 24px; /* Tamaño de fuente ajustable */
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Agrega sombra para darle un toque moderno */
+}
+
+/* Contenedor del formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Etiquetas de los campos */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--color-texto);
+}
+
+/* Estilo de los campos de entrada y textarea */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-input-borde);
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-boton); /* Borde que cambia al enfocar el campo */
+  outline: none; /* Eliminar el contorno por defecto */
+}
+
+/* Estilo de los botones */
+.btn-submit {
+  background-color: var(--color-boton);
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--color-boton-hover);
+  transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Mensaje de éxito */
+.success-message {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid var(--color-borde-exito);
+  border-radius: 8px;
+  background-color: var(--color-mensaje-exito);
+  margin-top: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success-message h2 {
+  color: var(--color-texto-exito);
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .formulario-errores {
+      padding: 15px;
+      margin: 30px auto;
+  }
+
+  .btn-submit {
+      padding: 10px 14px;
+      font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 20px; /* Ajuste del tamaño de la fuente para pantallas más pequeñas */
+  }
+}
